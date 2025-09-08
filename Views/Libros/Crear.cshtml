@@ -1,0 +1,20 @@
+﻿@model DirectorioLibros.Models.Libro
+
+@{
+    ViewData["Title"] = "Agregar Libro";
+}
+
+<h2>Agregar Libro</h2>
+
+<form asp-action="Crear" method="post">
+    <label>Título:</label><br />
+    <input type="text" name="Titulo" required /><br /><br />
+
+    <label>Autor:</label><br />
+    <input type="text" name="Autor" required /><br /><br />
+
+    <label>Año de Publicación:</label><br />
+    <input type="number" name="AnoPublicacion" required /><br /><br />
+
+    <input type="submit" value="Agregar Libro" />
+</form>
